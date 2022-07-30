@@ -1,0 +1,20 @@
+
+<% include partials/header %> 
+
+    
+    <div>
+        <h1>Home</h1>
+        <p><%= homeStartingContent %> </p>
+        <hr>
+    </div>
+
+    <% posts.forEach(p => { %>
+        <div>
+            <h1><%= p.title %> </h1>
+            <p><%= p.postBody %> </p>
+            <hr>
+        </div>
+    <% }) %>
+
+
+<% include partials/footer %> 
